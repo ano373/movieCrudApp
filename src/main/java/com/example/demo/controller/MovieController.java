@@ -1,12 +1,19 @@
 package com.example.demo.controller;
 
+import com.example.demo.DTO.MovieDTO;
 import com.example.demo.model.Movie;
 import com.example.demo.service.MovieService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.ObjectError;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.stream.Collectors;
+
 
 @RestController
 @RequestMapping("/")
@@ -17,12 +24,10 @@ public class MovieController {
 
     @GetMapping("favicon.ico")
     @ResponseBody
-    void returnNoFavicon() {
-        // No content, just a 204 No Content response
-    }
+    void returnNoFavicon() {}
 
     @GetMapping("/movies")
-    public List<Movie> getMovies(){
+    public List<MovieDTO> getMovies(){
         return movieService.getMovies();
     }
 
@@ -31,9 +36,11 @@ public class MovieController {
         return movieService.getMovie(id);
     }
 
+
     @PostMapping("/movie")
-    public Movie addMovie(@RequestBody Movie movie) {
-        return movieService.addMovie(movie);
+    public ResponseEntity<?> addMovie(@RequestBody @Valid Movie movie) {
+        Movie createdMovie = movieService.addMovie(movie);
+        return ResponseEntity.ok(createdMovie);
     }
 
 

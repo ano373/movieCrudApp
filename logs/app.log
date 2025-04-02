@@ -1,22 +1,27 @@
-2025-04-02T05:50:15.263+02:00  INFO 14109 --- [movieCrudApp] [restartedMain] c.example.demo.MovieCrudAppApplication   : Starting MovieCrudAppApplication using Java 21.0.6 with PID 14109 (/home/ano2/Downloads/college/1- projects (programing)/springBoot/movieCrudApp/target/classes started by ano2 in /home/ano2/Downloads/college/1- projects (programing)/springBoot/movieCrudApp)
-2025-04-02T05:50:15.266+02:00  INFO 14109 --- [movieCrudApp] [restartedMain] c.example.demo.MovieCrudAppApplication   : No active profile set, falling back to 1 default profile: "default"
-2025-04-02T05:50:15.321+02:00  INFO 14109 --- [movieCrudApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-04-02T05:50:15.321+02:00  INFO 14109 --- [movieCrudApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-04-02T05:50:15.954+02:00  INFO 14109 --- [movieCrudApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-04-02T05:50:16.005+02:00  INFO 14109 --- [movieCrudApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interface.
-2025-04-02T05:50:16.447+02:00  INFO 14109 --- [movieCrudApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-04-02T05:50:16.462+02:00  INFO 14109 --- [movieCrudApp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-04-02T05:50:16.463+02:00  INFO 14109 --- [movieCrudApp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
-2025-04-02T05:50:16.502+02:00  INFO 14109 --- [movieCrudApp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-04-02T05:50:16.503+02:00  INFO 14109 --- [movieCrudApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1181 ms
-2025-04-02T05:50:16.658+02:00  INFO 14109 --- [movieCrudApp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-04-02T05:50:16.697+02:00  INFO 14109 --- [movieCrudApp] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
-2025-04-02T05:50:16.724+02:00  INFO 14109 --- [movieCrudApp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-04-02T05:50:16.933+02:00  INFO 14109 --- [movieCrudApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-04-02T05:50:16.958+02:00  INFO 14109 --- [movieCrudApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-04-02T05:50:17.290+02:00  INFO 14109 --- [movieCrudApp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d2f0090
-2025-04-02T05:50:17.292+02:00  INFO 14109 --- [movieCrudApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-04-02T05:50:17.367+02:00  INFO 14109 --- [movieCrudApp] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-04-03T00:06:29.572+02:00  INFO 12565 --- [movieCrudApp] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-03T00:06:29.605+02:00  INFO 12565 --- [movieCrudApp] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-03T00:06:29.639+02:00  INFO 12565 --- [movieCrudApp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03T00:06:29.651+02:00  INFO 12565 --- [movieCrudApp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-03T00:06:29.678+02:00  INFO 12565 --- [movieCrudApp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-03T01:11:08.159+02:00  INFO 14524 --- [movieCrudApp] [restartedMain] c.example.demo.MovieCrudAppApplication   : Starting MovieCrudAppApplication using Java 21.0.6 with PID 14524 (/home/ano2/Downloads/college/1- projects (programing)/springBoot/movieCrudApp/target/classes started by ano2 in /home/ano2/Downloads/college/1- projects (programing)/springBoot/movieCrudApp)
+2025-04-03T01:11:08.161+02:00  INFO 14524 --- [movieCrudApp] [restartedMain] c.example.demo.MovieCrudAppApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-04-03T01:11:08.227+02:00  INFO 14524 --- [movieCrudApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-03T01:11:08.227+02:00  INFO 14524 --- [movieCrudApp] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-03T01:11:08.920+02:00  INFO 14524 --- [movieCrudApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-04-03T01:11:08.973+02:00  INFO 14524 --- [movieCrudApp] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interface.
+2025-04-03T01:11:09.434+02:00  INFO 14524 --- [movieCrudApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-04-03T01:11:09.453+02:00  INFO 14524 --- [movieCrudApp] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-04-03T01:11:09.455+02:00  INFO 14524 --- [movieCrudApp] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-04-03T01:11:09.503+02:00  INFO 14524 --- [movieCrudApp] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-04-03T01:11:09.504+02:00  INFO 14524 --- [movieCrudApp] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1276 ms
+2025-04-03T01:11:09.662+02:00  INFO 14524 --- [movieCrudApp] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-04-03T01:11:09.710+02:00  INFO 14524 --- [movieCrudApp] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-04-03T01:11:09.741+02:00  INFO 14524 --- [movieCrudApp] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-04-03T01:11:09.973+02:00  INFO 14524 --- [movieCrudApp] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-04-03T01:11:10.000+02:00  INFO 14524 --- [movieCrudApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-04-03T01:11:10.378+02:00  INFO 14524 --- [movieCrudApp] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39b7f5b6
+2025-04-03T01:11:10.381+02:00  INFO 14524 --- [movieCrudApp] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-04-03T01:11:10.461+02:00  INFO 14524 --- [movieCrudApp] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.41
@@ -24,21 +29,18 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-04-02T05:50:18.045+02:00  INFO 14109 --- [movieCrudApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-04-02T05:50:18.113+02:00  INFO 14109 --- [movieCrudApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-04-02T05:50:18.334+02:00  WARN 14109 --- [movieCrudApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-04-02T05:50:18.676+02:00  INFO 14109 --- [movieCrudApp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-04-02T05:50:18.703+02:00  INFO 14109 --- [movieCrudApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-04-02T05:50:18.713+02:00  INFO 14109 --- [movieCrudApp] [restartedMain] c.example.demo.MovieCrudAppApplication   : Started MovieCrudAppApplication in 3.894 seconds (process running for 4.244)
-2025-04-02T05:50:23.458+02:00  INFO 14109 --- [movieCrudApp] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-04-02T05:50:23.458+02:00  INFO 14109 --- [movieCrudApp] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-04-02T05:50:23.461+02:00  INFO 14109 --- [movieCrudApp] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2025-04-02T05:50:23.578+02:00  INFO 14109 --- [movieCrudApp] [http-nio-8080-exec-2] com.example.demo.service.MovieService    : Creating movie: amani mesa 
-2025-04-02T05:50:23.669+02:00  INFO 14109 --- [movieCrudApp] [http-nio-8080-exec-2] com.example.demo.service.MovieService    : Movie created with ID: 12
-2025-04-02T05:51:14.630+02:00  INFO 14109 --- [movieCrudApp] [http-nio-8080-exec-3] com.example.demo.service.MovieService    : Creating movie: fdasfsad gfdasg 
-2025-04-02T05:51:14.666+02:00  INFO 14109 --- [movieCrudApp] [http-nio-8080-exec-3] com.example.demo.service.MovieService    : Movie created with ID: 13
-2025-04-02T05:51:43.860+02:00  INFO 14109 --- [movieCrudApp] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-04-02T05:51:43.872+02:00  INFO 14109 --- [movieCrudApp] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-04-02T05:51:43.891+02:00  INFO 14109 --- [movieCrudApp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-04-02T05:51:43.903+02:00  INFO 14109 --- [movieCrudApp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-04-02T05:51:43.942+02:00  INFO 14109 --- [movieCrudApp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-04-03T01:11:11.189+02:00  INFO 14524 --- [movieCrudApp] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-04-03T01:11:11.234+02:00  INFO 14524 --- [movieCrudApp] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03T01:11:11.476+02:00  WARN 14524 --- [movieCrudApp] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-04-03T01:11:11.810+02:00  INFO 14524 --- [movieCrudApp] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-04-03T01:11:11.836+02:00  INFO 14524 --- [movieCrudApp] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-04-03T01:11:11.846+02:00  INFO 14524 --- [movieCrudApp] [restartedMain] c.example.demo.MovieCrudAppApplication   : Started MovieCrudAppApplication in 4.137 seconds (process running for 4.533)
+2025-04-03T01:11:19.939+02:00  INFO 14524 --- [movieCrudApp] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-03T01:11:19.940+02:00  INFO 14524 --- [movieCrudApp] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-04-03T01:11:19.942+02:00  INFO 14524 --- [movieCrudApp] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-04-03T01:12:07.904+02:00  WARN 14524 --- [movieCrudApp] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<?> com.example.demo.controller.MovieController.addMovie(com.example.demo.model.Movie): [Field error in object 'movie' on field 'director': rejected value [null]; codes [NotNull.movie.director,NotNull.director,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [movie.director,director]; arguments []; default message [director]]; default message [movie must have a director]] ]
+2025-04-03T01:24:15.435+02:00  INFO 14524 --- [movieCrudApp] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-03T01:24:15.452+02:00  INFO 14524 --- [movieCrudApp] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-03T01:24:15.467+02:00  INFO 14524 --- [movieCrudApp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03T01:24:15.481+02:00  INFO 14524 --- [movieCrudApp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-04-03T01:24:15.520+02:00  INFO 14524 --- [movieCrudApp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -1,7 +1,8 @@
 package com.example.demo.exception;
 
+import java.util.List;
+import java.util.ArrayList;
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -9,5 +10,5 @@ import lombok.Setter;
 @Setter
 @Getter
 public class ErrorDetails {
-    private String error , message;
-}
+    private String error ;
+    private List<String> messages = new ArrayList<>();}

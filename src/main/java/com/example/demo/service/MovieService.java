@@ -1,7 +1,9 @@
 package com.example.demo.service;
 
+import com.example.demo.DTO.MovieDTO;
 import com.example.demo.exception.InvalidRequestException;
 import com.example.demo.exception.MovieNotFoundException;
+import com.example.demo.mapper.MovieMapper;
 import com.example.demo.model.Movie;
 import com.example.demo.repository.MovieRepository;
 import org.slf4j.Logger;
@@ -13,6 +15,7 @@ import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class MovieService {
@@ -20,10 +23,16 @@ public class MovieService {
 
     @Autowired
     private MovieRepository movieRepository;
+    @Autowired
+    private MovieMapper movieMapper;
 
 
-    public List<Movie> getMovies() {
-        return movieRepository.findAll();
+    public List<MovieDTO> getMovies() {
+
+       return  movieRepository.findAll()
+               .stream()
+               .map(movie -> movieMapper.toDTO(movie))
+               .collect(Collectors.toList());
     }
 
 
