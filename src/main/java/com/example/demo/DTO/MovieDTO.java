@@ -9,7 +9,6 @@ public class MovieDTO {
     private String title;
     private String director;
     private Integer releaseYear;
-
 }
 
 

@@ -27,7 +27,5 @@ public class Movie {
     private Integer releaseYear;
 
     private Double rating;
-
-
 }
 
