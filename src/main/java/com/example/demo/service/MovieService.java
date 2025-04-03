@@ -27,11 +27,12 @@ public class MovieService {
     private MovieMapper movieMapper;
 
 
+
     public List<MovieDTO> getMovies() {
 
        return  movieRepository.findAll()
                .stream()
-               .map(movie -> movieMapper.toDTO(movie))
+               .map(movieMapper::toDTO)
                .collect(Collectors.toList());
     }
 

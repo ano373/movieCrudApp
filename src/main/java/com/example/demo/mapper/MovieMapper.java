@@ -2,15 +2,15 @@ package com.example.demo.mapper;
 
 import com.example.demo.DTO.MovieDTO;
 import com.example.demo.model.Movie;
+import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 import org.springframework.stereotype.Component;
 
-@Component
-public class MovieMapper {
-    public MovieDTO toDTO(Movie movie){
-        return new MovieDTO(
-                movie.getTitle(),
-                (movie.getDirector() != null ? movie.getDirector() : "Unknown Director"),
-                ( movie.getReleaseYear() != null && movie.getReleaseYear() >= 1000 ? movie.getReleaseYear() : 2000)
-        );
-    }
+@Mapper(componentModel = "spring")
+public interface MovieMapper {
+    @Mapping( target = "director") // default value for null director
+    @Mapping(target = "releaseYear")
+    MovieDTO toDTO(Movie movie);
+
+
 }

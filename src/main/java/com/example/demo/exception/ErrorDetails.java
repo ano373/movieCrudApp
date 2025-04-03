@@ -11,4 +11,5 @@ import lombok.Setter;
 @Getter
 public class ErrorDetails {
     private String error ;
-    private List<String> messages = new ArrayList<>();}
+    private List<String> messages = new ArrayList<>();
+}

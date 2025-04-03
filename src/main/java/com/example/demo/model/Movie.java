@@ -28,6 +28,6 @@ public class Movie {
 
     private Double rating;
 
-    // Getters and Setters
+
 }
 
