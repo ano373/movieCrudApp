@@ -32,14 +32,14 @@ public class MovieController {
     }
 
     @GetMapping("/{id}")
-    public Movie getMovie(@PathVariable long id){
+    public MovieDTO getMovie(@PathVariable long id){
         return movieService.getMovie(id);
     }
 
 
     @PostMapping("/movie")
     public ResponseEntity<?> addMovie(@RequestBody @Valid Movie movie) {
-        Movie createdMovie = movieService.addMovie(movie);
+        MovieDTO createdMovie = movieService.addMovie(movie);
         return ResponseEntity.ok(createdMovie);
     }
 

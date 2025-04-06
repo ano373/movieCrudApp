@@ -8,9 +8,6 @@ import org.springframework.stereotype.Component;
 
 @Mapper(componentModel = "spring")
 public interface MovieMapper {
-    @Mapping( target = "director") // default value for null director
-    @Mapping(target = "releaseYear")
     MovieDTO toDTO(Movie movie);
-
-
+    Movie toEntity(MovieDTO dto);
 }

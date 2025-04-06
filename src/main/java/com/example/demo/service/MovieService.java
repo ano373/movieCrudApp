@@ -37,26 +37,22 @@ public class MovieService {
     }
 
 
-    public  Movie getMovie(long id){
-        if (id <= 0) {
-            throw new InvalidRequestException("Invalid movie ID provided");
-        }
+    public  MovieDTO getMovie(long id){
+        if (id <= 0)  throw new InvalidRequestException("Invalid movie ID provided");
 
-        Movie movie = movieRepository.findById(id).orElseThrow(() ->  new MovieNotFoundException(String.format("No movie found with ID %d.", id)));
-        return movie;
+        return movieRepository.findById(id)
+                .map(movieMapper::toDTO)
+                .orElseThrow(() -> new MovieNotFoundException("No movie found with ID %d.".formatted(id)));
     }
 
-    public  Movie addMovie(Movie movie){
-        logger.info("Creating movie: {}", movie.getTitle());
-
+    public  MovieDTO addMovie(Movie movie){
         Movie savedMovie = movieRepository.save(movie);
-        logger.info("Movie created with ID: {}", savedMovie.getId());
-        return savedMovie;
+        return movieMapper.toDTO(savedMovie);
     }
 
     public Movie updateMovie(long id , Movie moviedetails){
         Movie movie = movieRepository.findById(id)
-                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Movie not found"));
+                .orElseThrow(() -> new MovieNotFoundException("No movie found with ID %d.".formatted(id)));
         movie.setDirector(moviedetails.getDirector());
         movie.setReleaseYear(moviedetails.getReleaseYear());
         return movieRepository.save(movie);
@@ -64,7 +60,7 @@ public class MovieService {
 
     public void deleteMovie(long id){
         Movie movie = movieRepository.findById(id)
-                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Movie not found"));
+                .orElseThrow(() -> new MovieNotFoundException("No movie found with ID %d.".formatted(id)));
 
          movieRepository.delete(movie);
     }
